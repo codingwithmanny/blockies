@@ -1,5 +1,5 @@
 {
-  "name": "@cwm/blockies",
+  "name": "@codingwithmanny/blockies",
   "version": "1.0.0",
   "author": "codingwithmanny",
   "description": "A TypeScript SVG DataURI version of Blockies",

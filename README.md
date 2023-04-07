@@ -9,7 +9,7 @@ An TypeScript inspired repository from the original [@download/blockies](https:/
 ```bash
 # FROM: ./path/to/project
 
-npm install @cmw/blockies; # pnpm add @cmw/blockies
+npm install @codingwithmanny/blockies; # pnpm add @codingwithmanny/blockies
 ```
 
 ###  Node
@@ -17,7 +17,7 @@ npm install @cmw/blockies; # pnpm add @cmw/blockies
 ```ts
 // Imports
 // ========================================================
-import { renderSVGIcon } from '@cwm/blockies';
+import { renderSVGIcon } from '@codingwithmanny/blockies';
 
 // Main Script
 // ========================================================
@@ -34,7 +34,7 @@ import { renderSVGIcon } from '@cwm/blockies';
 // Imports
 // ========================================================
 import { type NextPage } from "next";
-import { renderSVGIcon, renderDataURI } from '@cwm/blockies';
+import { renderSVGIcon, renderDataURI } from '@codingwithmanny/blockies';
 
 // Constants
 // ========================================================
