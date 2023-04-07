@@ -1,6 +1,6 @@
 {
   "name": "@codingwithmanny/blockies",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "codingwithmanny",
   "description": "A TypeScript SVG DataURI version of Blockies",
   "contributors": [
@@ -27,7 +27,9 @@
   "homepage": "https://github.com/codingwithmanny/blockies/#readme",
   "scripts": {
     "build": "tsup",
-    "test": "tsup && ./node_modules/.bin/ts-node test/index.test.ts"
+    "test": "tsup && ./node_modules/.bin/ts-node test/index.test.ts",
+    "changeset": "./node_modules/.bin/changeset",
+    "changeset:version": "./node_modules/.bin/changeset version && pnpm install --lockfile-only"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
