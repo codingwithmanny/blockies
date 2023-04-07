@@ -2,6 +2,8 @@
 
 An TypeScript inspired repository from the original [@download/blockies](https://github.com/download13/blockies).
 
+![Blockies Examples](./README/blockies-examples.png)
+
 ---
 
 ## Getting Start

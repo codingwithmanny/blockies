@@ -1,5 +1,11 @@
 # @cwm/blockies
 
+## 1.0.3
+
+### Patch Changes
+
+- Added screenshot for README
+
 ## 1.0.2
 
 ### Patch Changes
