@@ -1,5 +1,11 @@
 # @cwm/blockies
 
+## 1.1.0
+
+### Minor Changes
+
+- Client-side support
+
 ## 1.0.3
 
 ### Patch Changes
