@@ -1,5 +1,11 @@
 # @cwm/blockies
 
+## 1.0.2
+
+### Patch Changes
+
+- Fixed rand always returning blank/black
+
 ## 1.0.1
 
 ### Patch Changes

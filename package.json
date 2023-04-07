@@ -1,6 +1,6 @@
 {
   "name": "@codingwithmanny/blockies",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "codingwithmanny",
   "description": "A TypeScript SVG DataURI version of Blockies",
   "contributors": [
