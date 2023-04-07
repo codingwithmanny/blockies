@@ -113,7 +113,7 @@ export const buildOpts = (opts: RenderIconOpts) => {
  * @param param0 
  * @returns 
  */
-export const renderSVGIcon = async (opts: RenderIconOpts) => {
+export const renderSVGIcon = (opts: RenderIconOpts) => {
 	const newOpts = buildOpts(opts);
 	const imageData = createImageData(newOpts.size);
 	const width = Math.sqrt(imageData.length);
@@ -121,8 +121,7 @@ export const renderSVGIcon = async (opts: RenderIconOpts) => {
 	const svgHeight = svgWidth;
     
     let svg = `<svg width="${svgWidth}" height="${svgHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}" fill="${newOpts.bgColor}" xmlns="http://www.w3.org/2000/svg"><rect width="${svgWidth}" height="${svgHeight}" fill="${newOpts.bgColor}" />`;
-
-	for await (const [i, _data] of imageData.entries()) {
+	for (let i = 0; i < imageData.length; i++) {
 		// if data is 0, leave the background
 		if(imageData[i]) {
 			const row = Math.floor(i / width);
@@ -143,6 +142,10 @@ export const renderSVGIcon = async (opts: RenderIconOpts) => {
  * 
  * @param opts 
  */
-export const renderDataURI = async (opts: RenderIconOpts) => {
-	return `data:image/svg+xml;base64,${Buffer.from(await renderSVGIcon(opts)).toString('base64')}`;
+export const renderDataURI = (opts: RenderIconOpts) => {
+	let dataURI = 'data:image/svg+xml;base64,';
+	if (typeof window !== "undefined") {
+		return `${dataURI}${window?.btoa(unescape(`${encodeURIComponent(renderSVGIcon(opts))}`)).toString()}`;
+	}
+	return `${dataURI}${Buffer.from(renderSVGIcon(opts)).toString('base64')}`;
 };

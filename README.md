@@ -30,7 +30,7 @@ import { renderSVGIcon } from '@codingwithmanny/blockies';
 })();
 ```
 
-### NextJS
+### ViteJS / NextJS
 
 ```tsx
 // Imports
