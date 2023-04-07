@@ -156,12 +156,12 @@ test('renderSVGIcon', async (subTest) => {
         const result = await renderSVGIcon({ seed: '' });
         assert(result === SVG_ICON_BLANK);
     });
-
+    
     /**
      * 
-     */
-    await subTest.test(`${WALLET_ADDRESS}`, async () => {
-        const result = await renderSVGIcon({ seed: WALLET_ADDRESS });
+    */
+   await subTest.test(`${WALLET_ADDRESS}`, async () => {
+       const result = await renderSVGIcon({ seed: WALLET_ADDRESS });
         assert(result === SVG_ICON_WALLET);
     });
 });
@@ -177,12 +177,12 @@ test('renderDataURI', async (subTest) => {
         const result = await renderDataURI({ seed: '' });
         assert(result === DATA_URI_BLANK);
     });
-
+    
     /**
      * 
-     */
-    await subTest.test(`${WALLET_ADDRESS}`, async () => {
-        const result = await renderDataURI({ seed: WALLET_ADDRESS });
+    */
+   await subTest.test(`${WALLET_ADDRESS}`, async () => {
+       const result = await renderDataURI({ seed: WALLET_ADDRESS });
         assert(result === DATA_URI_WALLET);
     });
 });

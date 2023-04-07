@@ -88,6 +88,7 @@ export const createImageData = (size: number) => {
  * @returns 
  */
 export const buildOpts = (opts: RenderIconOpts) => {
+	seedRand(opts.seed);
 	const newOpts: RenderIconOpts = {
         seed: "",
         size: opts?.size ?? 8,
@@ -98,7 +99,6 @@ export const buildOpts = (opts: RenderIconOpts) => {
     };
 
 	newOpts.seed = opts?.seed ?? Math.floor((Math.random()*Math.pow(10,16))).toString(16);
-	seedRand(newOpts.seed);
 	return newOpts as {
         size: number; 
         scale: number; 
