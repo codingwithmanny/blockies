@@ -1,0 +1,44 @@
+{
+  "name": "@cwm/blockies",
+  "version": "1.0.0",
+  "author": "codingwithmanny",
+  "description": "A TypeScript SVG DataURI version of Blockies",
+  "contributors": [
+    "codingwithmanny"
+  ],
+  "keywords": [
+    "blockies",
+    "svg",
+    "pfp",
+    "blockchain",
+    "profile-photo",
+    "web3"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingwithmanny/blockies.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codingwithmanny/blockies/issues"
+  },
+  "homepage": "https://github.com/codingwithmanny/blockies/#readme",
+  "scripts": {
+    "build": "tsup",
+    "test": "tsup && ./node_modules/.bin/ts-node test/index.test.ts"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "ts-node": "^10.9.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.11"
+  },
+  "engines": {
+    "node": "^18.15.0"
+  }
+}
